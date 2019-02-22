@@ -1,0 +1,1027 @@
+// Counter-Strike 1.6 MOD BEAST 2018 CommandMenu
+// =================================================================================================
+// © 2018 By: babii
+// =================================================================================================
+"0" ".:: CS-BEASTMOD ::." "say .:: CS-BEASTMOD - Get it NOW!! - http://csme.ga/download ::.
+
+"*" "Game Settings"
+{
+	"*" "Player: changes"
+	{
+		"*" "player: change name" 				 "messagemode name"
+		"*" "player: change team" 
+			{
+			"*" "team: terrorist" 			 "chooseteam; jointeam 1; waits; slot2; cancelselect"
+			"*" "team: counter" 			 "chooseteam; jointeam 2; waits; slot4; cancelselect"
+			"*" "team: auto select" 			 "chooseteam; jointeam 5; waits; slot2; cancelselect"
+			"*" "team: spectator" 			 "chooseteam; jointeam 6; waits; cancelselect"
+			}
+		"*" "player: change team" 				 "chooseteam"
+	}
+	"*" "Player: sensitivity"
+	{
+		"*" "sensitivity: zoom"
+			{
+			"*" "zoom: 0.4" 				 "zoom_sensitivity_ratio 0.40000"
+			"*" "zoom: 0.6" 				 "zoom_sensitivity_ratio 0.60000"
+			"*" "zoom: 0.8" 				 "zoom_sensitivity_ratio 0.80000"
+			"*" "zoom: 1.0" 				 "zoom_sensitivity_ratio 1.00000"
+			"*" "zoom: 1.2 (default)" 			 "zoom_sensitivity_ratio 1.20000"
+			"*" "zoom: 1.4" 				 "zoom_sensitivity_ratio 1.40000"
+			"*" "zoom: 1.6" 				 "zoom_sensitivity_ratio 1.60000"
+			"*" "zoom: 1.8" 				 "zoom_sensitivity_ratio 1.80000"
+			"*" "zoom: 2.0" 		                    	 "zoom_sensitivity_ratio 2.00000"
+			}
+		"*" "sensitivity: zoom" 				 "messagemode zoom_sensitivity_ratio"
+		"*" "sensitivity: mouse"
+			{
+			"*" "mouse: 1.0" 				 "sensitivity 1.00000"
+			"*" "mouse: 1.5" 				 "sensitivity 1.50000"
+			"*" "mouse: 2.0" 				 "sensitivity 2.00000"
+			"*" "mouse: 2.5" 				 "sensitivity 2.50000"
+			"*" "mouse: 3.0" 				 "sensitivity 3.00000"
+			"*" "mouse: 3.5" 				 "sensitivity 3.50000"
+			"*" "mouse: 4.0" 				 "sensitivity 4.00000"
+			"*" "mouse: 4.5" 				 "sensitivity 4.50000"
+			"*" "mouse: 5.0" 				 "sensitivity 5.00000"
+			}
+		"*" "sensitivity: mouse" 				 "messagemode sensitivity"
+	}
+	"*" "Player: crosshair"
+		{
+		"*" "crosshair: dynamic"
+			{
+			"*" "dynamic crosshair: disable" 		 "cl_dynamiccrosshair 0"
+			"*" "dynamic crosshair: enable" 		 "cl_dynamiccrosshair 1"
+			}
+		"*" "crosshair: translucent"
+			{
+			"*" "translucent: disable" 			 "cl_crosshair_translucent 0"
+			"*" "translucent: enable" 			 "cl_crosshair_translucent 1"
+			}
+		"*" "crosshair: color"
+			{
+			"*" "color: translucent"
+				{
+				"*" "green" 			 "adjust_crosshair 0"
+				"*" "red" 				 "adjust_crosshair 1"
+				"*" "blue" 			 "adjust_crosshair 2"
+				"*" "yellow" 			 "adjust_crosshair 3"
+				"*" "light blue" 			 "adjust_crosshair 4"
+				}
+			"*" "color: non translucent"
+				{
+				"*" "green" 			 "adjust_crosshair 5"
+				"*" "red" 				 "adjust_crosshair 6"
+				"*" "blue" 			 "adjust_crosshair 7"
+				"*" "yellow" 			 "adjust_crosshair 8"
+				"*" "light blue" 			 "adjust_crosshair 9"
+				}
+			"*" "color: others"
+				{
+				"*" "black"                     		 "exec BEAST-CONFIGS/crosshair/black.cfg"
+				"*" "white"			 "exec BEAST-CONFIGS/crosshair/white.cfg"
+				"*" "blue"			 	 "exec BEAST-CONFIGS/crosshair/blue.cfg"
+				"*" "green"			 "exec BEAST-CONFIGS/crosshair/green.cfg"
+				"*" "orange"			 "exec BEAST-CONFIGS/crosshair/orange.cfg"	
+				}	
+			"*" "color: adjust crosshair" 			 "messagemode cl_crosshair_color"
+		}
+		"*" "crosshair: size"
+			{
+			"*" "size: small"				 "cl_crosshair_size small"
+			"*" "size: medium"				 "cl_crosshair_size medium"
+			"*" "size: large"				 "cl_crosshair_size large"
+			}
+		"*" "crosshair: on-off"
+			{
+			"*" "on-off: disable" 			 "cl_crosshair_color 0;cl_crosshair_translucent 1"
+			"*" "on-off: enable" 			 "cl_crosshair_color 255;cl_crosshair_translucent 0"
+			}
+	}
+	"*" "Player: console"
+	{
+		"*" "console: color"
+			{
+			"*" "color: black" 				 "exec BEAST-CONFIGS/console/black.cfg; say Black Consol Color Loaded"
+			"*" "color: cyan" 				 "exec BEAST-CONFIGS/console/cyan.cfg; say Cyan Consol Color Loaded"
+			"*" "color: dark green" 			 "exec BEAST-CONFIGS/console/darkgreen.cfg; say Dark Green Consol Color Loaded"
+			"*" "color: deep sky" 			 "exec BEAST-CONFIGS/console/deepsky.cfg; say Deep Sky Consol Color Loaded"
+			"*" "color: gold" 				 "exec BEAST-CONFIGS/console/gold.cfg; say Gold Consol Color Loaded"
+			}
+		"*" "console: color"
+			{
+			"*" "color: green" 				 "exec BEAST-CONFIGS/console/green.cfg; say Green Consol Color Loaded"
+			"*" "color: grey" 				 "exec BEAST-CONFIGS/console/grey.cfg; say Grey Consol Color Loaded"
+			"*" "color: light green" 			 "exec BEAST-CONFIGS/console/lightgreen.cfg; say Light Green Consol Color Loaded"
+			"*" "color: olive" 				 "exec BEAST-CONFIGS/console/olive.cfg; say Olive Consol Color Loaded"
+			"*" "color: orange" 				 "exec BEAST-CONFIGS/console/orange.cfg; say Orange Consol Color Loaded"
+			}
+		"*" "console: color"
+			{
+			"*" "color: red orange" 			 "exec BEAST-CONFIGS/console/redorange.cfg; say RedOrang Consol Color Loaded"
+			"*" "color: peru" 				 "exec BEAST-CONFIGS/console/peru.cfg; say Peru Consol Color Loaded"
+			"*" "color: pink" 				 "exec BEAST-CONFIGS/console/pink.cfg; say Pink Consol Color Loaded"
+			"*" "color: red" 				 "exec BEAST-CONFIGS/console/red.cfg; say Red Consol Color Loaded"
+			"*" "color: sky blue" 			 "exec BEAST-CONFIGS/console/skyblue.cfg; say Sky Blue Consol Color Loaded"
+			}
+		"*" "console: color"
+			{
+			"*" "color: slate blue" 			 "exec BEAST-CONFIGS/console/slateblue.cfg; say Slate Blue Consol Color Loaded"
+			"*" "color: spring" 				 "exec BEAST-CONFIGS/console/spring.cfg; say Spring Consol Color Loaded"
+			"*" "color: violet" 				 "exec BEAST-CONFIGS/console/violet.cfg; say Violet Consol Color Loaded"
+			"*" "color: white" 				 "exec BEAST-CONFIGS/console/white.cfg; say White Consol Color Loaded"
+			"*" "color: yellow" 				 "exec BEAST-CONFIGS/console/yellow.cfg; say Yellow Consol Color Loaded"
+			}
+	}
+	"*" "Player: settings"
+	{
+		"*" "settings: rates"
+			{
+			"*" "rates: lan" 				 "rate 25000;cl_rate 25000;cl_updaterate 101;cl_cmdrate 101"
+			"*" "rates: broadband" 			 "rate 9999;cl_updaterate 30;cl_cmdrate 30"
+			"*" "rates: isdn" 				 "rate 7000;cl_updaterate 25;cl_cmdrate 30"
+			"*" "rates: 56k" 				 "rate 3500;cl_updaterate 20;cl_cmdrate 30"
+			"*" "rates: custom" 			 	 "messagemode rate"
+			}
+		"*" "settings: updaterate" 			 	 "messagemode cl_updaterate"
+		"*" "settings: cmd rate" 			 	 "messagemode cl_cmdrate"
+		"*" "settings: cmd backup"          			 "messagemode cl_cmdbackup"
+		"*" "settings: resend" 		                   	 "messagemode cl_resend"
+		"*" "settings: interp"
+			{
+			"*" "interp: auto" 				"ex_interp 0"
+			"*" "interp: 0.01" 				"ex_interp 0.01"
+			"*" "interp: 0.09" 				"ex_interp 0.09"
+			"*" "interp: 0.1" 				"ex_interp 0.1"
+			"*" "interp: custom" 			"messagemode ex_interp"
+			}
+	}
+	"*" "Player: weapon hands"
+	{
+		"*" "models: left"					 "cl_righthand 0"
+		"*" "models: right"					 "cl_righthand 1"
+		"*" "models: each"					 "cl_righthand -1"
+	}
+	"*" "Player: netgraph" 
+		{
+		"*" "netgraph: show"
+			{ 
+			"*" "show: netgraph off" 			 "net_graph 0"  
+			"*" "show: netgraph 1" 			 "net_graph 1"
+			"*" "show: netgraph 2" 			 "net_graph 2"
+			"*" "show: netgraph 3" 			 "net_graph 3"
+			}
+		"*" "netgraph: position"
+			{
+			"*" "position: right" 				 "net_graphpos 1"
+			"*" "position: middle" 			 "net_graphpos 2"
+			"*" "position: left" 				 "net_graphpos 3"
+			}
+		"*" "netgraph: height"
+			{
+			"*" "height: -14" 				 "graphheight -14"
+			"*" "height: 10"				 "graphheight 10"
+			"*" "height: 32" 				 "graphheight 32"
+			"*" "height: 64" 				 "graphheight 64"
+			"*" "height: custom" 			 "messagemode graphheight"
+			}
+		"*" "netgraph: width"
+			{
+			"*" "width: 15" 				 "net_graphwidth 150"
+			"*" "width: 27" 				 "net_graphwidth 270"
+			"*" "width: 30" 				 "net_graphwidth 300"
+			"*" "width: 64" 				 "net_graphwidth 640"
+			"*" "width: custom" 				 "messagemode graphwidth"
+			}
+
+	}
+	"*" "Player: show fps"
+	{	
+		"*" "show fps: disable" 				 "cl_showfps 0"
+		"*" "show fps: enable" 				 "cl_showfps 1"
+	}
+	"*" "Player: radar type"
+	{
+		"*" "radar type: transparent"				 "cl_radartype 0"
+		"*" "radar type: solid"				 "cl_radartype 1"
+	}
+	"*" "Player: center id"
+	{
+		"*" "center id: disable" 				 "hud_centerid 0"
+		"*" "center id: enable" 				 "hud_centerid 1"
+	}
+	"*" "Player: menu type"
+	{	
+		"*" "menu type: classic"				 "setinfo _vgui_menus 0"
+		"*" "menu type: vgui"   				 "setinfo _vgui_menus 1"
+	}
+	"*" "Player: auto weapon switch"
+	{
+		"*" "auto weapon switch: disable"			 "setinfo _cl_autowepswitch 0"
+		"*" "auto weapon switch: enable"			 "setinfo _cl_autowepswitch 1"
+	}	
+}
+"*" "MP3 Player"
+{
+	"1" "Playlist 1"	
+	{
+		"1" "Song1" "mp3 play mp3/1.mp3 ;say CS-BEAST-Playing Song#1"
+		"2" "Song2" "mp3 play mp3/2.mp3 ;say CS-BEAST-Playing Song#2"
+		"3" "Song3" "mp3 play mp3/3.mp3 ;say CS-BEAST-Playing Song#3"
+		"4" "Song4" "mp3 play mp3/4.mp3 ;say CS-BEAST-Playing Song#4"
+		"5" "Song5" "mp3 play mp3/5.mp3 ;say CS-BEAST-Playing Song#5"
+		"6" "Song6" "mp3 play mp3/6.mp3 ;say CS-BEAST-Playing Song#6"
+		"7" "Song7" "mp3 play mp3/7.mp3 ;say CS-BEAST-Playing Song#7"
+		"8" "Song8" "mp3 play mp3/8.mp3 ;say CS-BEAST-Playing Song#8"
+		"9" "Song9" "mp3 play mp3/9.mp3 ;say CS-BEAST-Playing Song#9"
+		"10" "Song10" "mp3 play mp3/10.mp3 ;say CS-BEAST-Playing Song#10"		
+	}
+	"2" "Playlist 2" 
+	{
+		"1" "Song11" "mp3 play mp3/11.mp3 ;say CS-BEAST-Playing Song#11"
+		"2" "Song12" "mp3 play mp3/12.mp3 ;say CS-BEAST-Playing Song#12"
+		"3" "Song13" "mp3 play mp3/13.mp3 ;say CS-BEAST-Playing Song#13"
+		"4" "Song14" "mp3 play mp3/14.mp3 ;say CS-BEAST-Playing Song#14"
+		"5" "Song15" "mp3 play mp3/15.mp3 ;say CS-BEAST-Playing Song#15"
+		"6" "Song16" "mp3 play mp3/16.mp3 ;say CS-BEAST-Playing Song#16"
+		"7" "Song17" "mp3 play mp3/17.mp3 ;say CS-BEAST-Playing Song#17"
+		"8" "Song18" "mp3 play mp3/18.mp3 ;say CS-BEAST-Playing Song#18"
+        "9" "Song19" "mp3 play mp3/19.mp3 ;say CS-BEAST-Playing Song#19"		
+	}
+	"3" "Playlist 3"
+	{
+		"1" "Song20" "mp3 play mp3/20.mp3 ;say CS-BEAST-Playing Song#20"
+		"2" "Song21" "mp3 play mp3/21.mp3 ;say CS-BEAST-Playing Song#21"
+		"3" "Song22" "mp3 play mp3/22.mp3 ;say CS-BEAST-Playing Song#22"
+		"4" "Song23" "mp3 play mp3/23.mp3 ;say CS-BEAST-Playing Song#23"
+		"5" "Song24" "mp3 play mp3/24.mp3 ;say CS-BEAST-Playing Song#24"
+		"6" "Song25" "mp3 play mp3/25.mp3 ;say CS-BEAST-Playing Song#25"
+	    "7" "Song26" "mp3 play mp3/26.mp3 ;say CS-BEAST-Playing Song#26"
+		"8" "Song27" "mp3 play mp3/27.mp3 ;say CS-BEAST-Playing Song#27"
+    }
+        "4" "Playlist 4"
+	{
+		"1" "Song28" "mp3 play mp3/28.mp3 ;say CS-BEAST-Playing Song#28"
+		"2" "Song29" "mp3 play mp3/29.mp3 ;say CS-BEAST-Playing Song#29"
+		"3" "Song30" "mp3 play mp3/30.mp3 ;say CS-BEAST-Playing Song#30"
+		"4" "Song31" "mp3 play mp3/31.mp3 ;say CS-BEAST-Playing Song#31"
+		"5" "Song32" "mp3 play mp3/32.mp3 ;say CS-BEAST-Playing Song#32"
+	}
+	"7" "Stop Music" "mp3 stop ;say CS-BEAST-MP3 Stoped!"
+} 
+
+"*" "Volume"
+{
+	"*" "volume: effects"	
+	{
+		"*" "volume 0.0" 					 "volume 0.0"
+		"*" "volume 0.2" 					 "volume 0.2"
+		"*" "volume 0.4" 					 "volume 0.4"
+		"*" "volume 0.6" 					 "volume 0.6"
+		"*" "volume 0.8" 					 "volume 0.8"
+		"*" "volume 1.0" 					 "volume 1.0"
+		"*" "volume 1.2" 					 "volume 1.2"
+		"*" "volume 1.4" 					 "volume 1.4"
+		"*" "volume 1.6" 					 "volume 1.6"
+		"*" "volume 1.8" 					 "volume 1.8"
+		"*" "volume 2.0" 					 "volume 2.0"		
+	}	
+	"*" "volume: mp3"	
+	{
+		"*" "volume 0.0" 					 "mp3volume 0;   say |------------- Mp3 Volume"
+		"*" "volume 0.1" 					 "mp3volume 0.1;say -|------------ Mp3 Volume"
+		"*" "volume 0.3" 					 "mp3volume 0.3; say --|----------- Mp3 Volume"
+		"*" "volume 0.6" 					 "mp3volume 0.6;say -----|-------- Mp3 Volume"
+		"*" "volume 0.8" 					 "mp3volume 0.8; say ---------|---- Mp3 Volume"
+		"*" "volume 1.0" 					 "mp3volume 1;   say -------------| Mp3 Volume"		
+	}
+}
+"*" "Configs"
+{   
+    "*" "Game-Play Configs"
+    {
+        "*" "CS" "exec BEAST-CONFIGS/game-config/cs.cfg"
+        "*" "DR" "exec BEAST-CONFIGS/game-config/dr.cfg"
+        "*" "HNS" "exec BEAST-CONFIGS/game-config/hns.cfg"
+        "*" "ZM" "exec BEAST-CONFIGS/game-config/zm.cfg"
+        "*" "JB" "exec BEAST-CONFIGS/game-config/jb.cfg"
+        "*" "Furien" "exec BEAST-CONFIGS/game-config/furien.cfg"
+        "*" "BB" "exec BEAST-CONFIGS/game-config/bb.cfg"
+        "*" "Knife" "exec BEAST-CONFIGS/game-config/knife.cfg"
+        "*" "Default" "exec BEAST-CONFIGS/game-config/df.cfg"
+	}
+    "*" "Set FPS"
+    {	  
+        "1" "100  FPS" "exec BEAST-CONFIGS/fps/10.cfg" 
+        "1" "250  FPS" "exec BEAST-CONFIGS/fps/25.cfg"
+        "1" "260  FPS" "exec BEAST-CONFIGS/fps/26.cfg"
+        "1" "300  FPS" "exec BEAST-CONFIGS/fps/30.cfg"
+        "1" "325  FPS" "exec BEAST-CONFIGS/fps/325.cfg"
+        "1" "350  FPS" "exec BEAST-CONFIGS/fps/350.cfg"
+        "1" "400  FPS" "exec BEAST-CONFIGS/fps/400.cfg"
+        "1" "500  FPS" "exec BEAST-CONFIGS/fps/500.cfg" 
+        "1" "600  FPS" "exec BEAST-CONFIGS/fps/600.cfg" 
+        "1" "700  FPS" "exec BEAST-CONFIGS/fps/700.cfg" 
+        "1" "800  FPS" "exec BEAST-CONFIGS/fps/800.cfg" 
+        "1" "1000  FPS" "exec BEAST-CONFIGS/fps/1000.cfg" 
+    }	
+	    "*" "Best Player Configs"
+    {	  
+        "1" "Cogu" "exec BEAST-CONFIGS/players/cogu.cfg; say Cogu Config Loaded"
+        "1" "F0rest" "exec BEAST-CONFIGS/players/f0rest.cfg; say F0rest Config Loaded"
+        "1" "Get_right" "exec BEAST-CONFIGS/players/get_right.cfg; say Get_right Config Loaded"
+        "1" "Neo" "exec BEAST-CONFIGS/players/neo.cfg; say Neo Config Loaded"
+        "1" "Taz" "exec BEAST-CONFIGS/players/taz.cfg; say Taz Config Loded"
+        "1" "Spawn" "exec BEAST-CONFIGS/players/spawn.cfg; say Spawn Config Loaded" 
+        "1" "Solo" "exec BEAST-CONFIGS/players/solo.cfg; say Solo Config Loaded" 
+    }	
+	    "*" "Graphic Configs"
+    {	  
+        "1" "HD Graphic" "exec BEAST-CONFIGS/graphic/hdexp.cfg; say CS-BEAST HD Graphic Loaded"
+		"1" "nVidia Graphic" "exec BEAST-CONFIGS/graphic/nvidiaexp.cfg; say CS-BEAST nVidia Graphic Loaded"
+        "1" "Steam Graphic" "exec BEAST-CONFIGS/graphic/hdexp.cfg; say CS-BEAST Steam Graphic Loaded"
+        "1" "FPS Graphic" "exec BEAST-CONFIGS/graphic/fpsexp.cfg; say CS-BEAST FPS Graphic Loaded"
+    }		
+	    "*" "Developer Configs"
+    {	  
+        "1" "Developer [ON]" "exec BEAST-CONFIGS/developer/devon.cfg; say CS-BEAST Developer Loaded"
+		"1" "Developer [OFF]" "exec BEAST-CONFIGS/developer/devoff.cfg; say CS-BEAST Developer Turned Off"
+    }		
+	    "*" "Help Configs"
+    {	  
+        "1" "BunnyHop [HELPER]" "exec BEAST-CONFIGS/helper/bhop.cfg; say CS-BEAST BunnyHop Helper Loaded"
+		"1" "AFK Script [ON]" "exec BEAST-CONFIGS/helper/afkon.cfg; say CS-BEAST AFK Script Turned ON"
+		"1" "AFK Script [OFF]" "exec BEAST-CONFIGS/helper/afkoff.cfg; say CS-BEAST AFK Script Turned Off"		
+    }		
+}
+"*" "AMX Mod X"
+{
+    "*" "AMX Mod X Command"	
+	{
+	    "*" "Displays the main AMX Mod X menu" 					 "amxmodmenu"	
+		"*" "Displays the CVAR menu" 					 "amx_cvarmenu"	
+		"*" "Displays the map change menu" 					 "amx_mapmenu"	
+		"*" "Displays the map voting menu" 					 "amx_votemapmenu"	
+		"*" "Displays the kick menu" 					 "amx_kickmenu"	
+		"*" "Displays the ban menu" 					 "amx_banmenu"	
+		"*" "Displays the slap/slay menu" 					 "amx_slapmenu"	
+		"*" "Displays the team switch menu" 					 "amx_teammenu"	
+		"*" "Displays the client commands menu" 					 "amx_clcmdmenu"	
+		"*" "Displays the weapones restrictions menu" 					 "amx_restmenu"	
+		"*" "Displays the teleport menu" 					 "amx_teleportmenu"	
+		"*" "Pause/Unpause plugins with menu"                "amx_pausecfgmenu"
+		"*" "Displays stats configurations menu"              "amx_statcfgmenu"
+	}	
+    "*" "AMX: Admin Command"	
+	{
+	    "*" "Kick a player from the server" 					 "messagemode amx_kick"	
+		"*" "Bans a player from the server" 					 "messagemode amx_ban"	
+		"*" "Unban a player from the server" 					 "messagemode amx_unban"	
+		"*" "Slays a player" 					 "messagemode amx_slay"	
+		"*" "Slaps a player" 					 "messagemode amx_slap"	
+		"*" "Pauses or unpauses the game" 					 "amx_pause"	
+		"*" "Displays who in the server" 					 "amx_who"	
+		"*" "Lists all loaded plugins" 					 "amx_plugins"	
+		"*" "List all loaded modules" 					 "amx_modules"	
+	}		
+	"*" "AMX: Chat Command"	
+	{
+		"*" "Send a message to all players in normal chat" 					 "messagemode amx_say"	
+		"*" "Send a private message to a player" 					         "messagemode amx_psay"
+		"*" "Send a left side HUD message to all players" 					 "messagemode amx_tsay"
+		"*" "Send a center HUD message to all players" 					     "messagemode amx_csay"
+	}	
+	"*" "AMX: Vote Command"	
+	{
+		"*" "Starts maps voting" 					 "messagemode amx_votemap"	
+		"*" "Start a vote to kick a players" 					         "messagemode amx_votekick"
+		"*" "Start a vote to ban a players" 					 "messagemode amx_voteban"
+		"*" "Start a custom poll" 					     "messagemode amx_vote"
+		"*" "Cancels the last poll" 					     "messagemode amx_cancelvote"		
+	}	
+	"*" "AMX: Consol Command"
+    {
+        "1" "Restert Scor" "say /rs"
+        "2" "Rank Stats" "say /rankstats"
+		"3" "The Rank" "say /rank"
+        "4" "Hp" "say /hp"
+        "5" "Top 15" "say /top15"
+        "6" "Admin" "say /admin"
+        "7" "Me" "say /me"
+        "8" "Ip" "say /ip"
+        "6" "NextMaps" "say nextmap"
+        "7" "TimeLeft" "say timeleft"
+    }
+}
+"*" "Bots"
+{
+	"*" "bots: quota"
+		{
+			"*" "quota: 01 bots"			"bot_quota 1"
+			"*" "quota: 03 bots"			"bot_quota 3"
+			"*" "quota: 05 bots"			"bot_quota 5"
+			"*" "quota: 07 bots"			"bot_quota 7"
+			"*" "quota: 09 bots"			"bot_quota 9"
+			"*" "quota: 11 bots"			"bot_quota 11"
+			"*" "quota: 13 bots"			"bot_quota 13"
+			"*" "quota: 15 bots"			"bot_quota 15"
+			"*" "quota: 17 bots"			"bot_quota 17"
+			"*" "quota: 19 bots"			"bot_quota 19"
+			"*" "quota: custom"				"messagemode bot_quota"
+		}
+	"*" "bots: use"
+		{
+		"*" "use: pistols"
+			{
+			"*" "disable"				"bot_allow_pistols 0"
+			"*" "enable"				"bot_allow_pistols 1"
+			}
+		"*" "use: smgs"
+			{
+			"*" "disable"				"bot_allow_sub_machine_guns 0"
+			"*" "enable"				"bot_allow_sub_machine_guns 1"
+			}
+		"*" "use: rifles"
+			{
+			"*" "disable"				"bot_allow_rifles 0"
+			"*" "enable"				"bot_allow_rifles 1"
+			}
+		"*" "use: snipers"
+			{
+			"*" "disable"				"bot_allow_snipers 0"
+			"*" "enable"				"bot_allow_snipers 1"
+			}
+		"*" "use: machine guns"
+			{
+			"*" "disable"				"bot_allow_machine_guns 0"
+			"*" "enable"				"bot_allow_machine_guns 1"
+			}
+		"*" "use: shotguns"
+			{
+			"*" "disable"				"bot_allow_shotguns 0"
+			"*" "enable"				"bot_allow_shotguns 1"
+			}
+		"*" "use: grenades"
+			{
+			"*" "disable"				"bot_allow_grenades 0"
+			"*" "enable"				"bot_allow_grenades 1"
+			}
+		"*" "use: shield"
+			{
+			"*" "disable"				"bot_allow_shield 0"
+			"*" "enable"				"bot_allow_shield 1"
+			}
+		}
+	"*" "bots: weapons"
+		{
+			"*" "weapons: knives"			"bot_knives_only 1"
+			"*" "weapons: pistols "			"bot_pistols_only 1"
+			"*" "weapons: rifles"			"bot_rifles_only 1"
+			"*" "weapons: snipers "			"bot_snipers_only 1"
+			"*" "weapons: all weapons"			"bot_all_weapons 1"
+                              	  }
+	"*" "bots: difficulty"
+		{
+			"*" "difficulty: easy"			"bot_difficulty 0"
+			"*" "difficulty: normal"			"bot_difficulty 1"
+			"*" "difficulty: hard"				"bot_difficulty 2"
+			"*" "difficulty: expert"			"bot_difficulty 3"
+		}
+	"*" "bots: radio"
+		{
+			"*" "radio: disable"				"bot_chatter off"
+			"*" "radio: minimal"				"bot_chatter minimal"
+			"*" "radio: normal"				"bot_chatter normal"
+			"*" "radio: standard"			"bot_chatter radio"
+		}
+	"*" "bots: quick add"
+		{
+			"*" "quick add: tr"				"bot_add_t"
+			"*" "quick add: ct"				"bot_add_ct"
+			"*" "quick add: random"			"bot_add"
+		}
+	"*" "bots: join team"
+		{
+			"*" "join team: tr"				"bot_join_team t"
+			"*" "join team: ct"				"bot_join_team ct"
+			"*" "join team: random"			"bot_join_team any"
+			"*" "join team: misc"
+				{
+				"*" "join: before player"		"bot_join_after_player 0"
+				"*" "join: after player"		"bot_join_after_player 1"
+				}
+		}
+	"*" "bots: objectives"
+		{
+			"*" "objectives: bots complete"		"bot_defer_to_human 0"
+			"*" "objectives: humans complete"		"bot_defer_to_human 1"
+		}
+	"*" "bots: rogues"
+		{
+			"*" "rogues: disable"			"bot_allow_rogues 0"
+			"*" "rogues: enable"			"bot_allow_rogues 1"
+		}
+	"*" "bots: stop"
+		{
+			"*" "stop: disable"	        			"bot_stop 0"
+			"*" "stop: enable"				"bot_stop 1"
+		}
+	"*" "bots: walk"
+		{
+			"*" "walk: disable"	        			"bot_walk 0"
+			"*" "walk: enable"				"bot_walk 1"
+		}
+       	"*" "bots: others"
+		{
+			"*" "others: bot kick"	        		"bot_kick"
+			"*" "others: bot kill"				"bot_kill"
+		}
+       	"*" "bots: prefix"						"messagemode bot_prefix"
+}
+"*" "Server"
+{
+	"*" "server: rcon"
+	{
+		"*" "server: maps"
+		{ 
+			"*" "maps:"
+			{
+				"*" "maps: airstrip"     	                      "rcon changelevel de_airstrip"
+				"*" "maps: aztec"       	                      "rcon changelevel de_aztec"
+				"*" "maps: cobble"      	                      "rcon changelevel de_cbble"
+				"*" "maps: chateau"	                      "rcon changelevel de_chateau"
+				"*" "maps: cpl fire"     	                      "rcon changelevel de_cpl_fire"
+				"*" "maps: cpl mill"     	                      "rcon changelevel de_cpl_mill"
+				"*" "maps: dust"       	                      "rcon changelevel de_dust"
+				"*" "maps: dust2"      	                      "rcon changelevel de_dust2"
+				"*" "maps: esl autumn"	                      "rcon changelevel de_esl_autumn"
+				"*" "maps: forge"                                          "rcon changelevel de_forge"
+			}
+			"*" "maps:"
+			{
+				"*" "maps: inferno"       	                      "rcon changelevel de_inferno"
+				"*" "maps: lite"           	                      "rcon changelevel de_lite"
+				"*" "maps: mirage"     	                      "rcon changelevel de_mirage"
+				"*" "maps: nuke"       	                      "rcon changelevel de_nuke"
+				"*" "maps: piranesi" 	                      "rcon changelevel de_piranesi"
+				"*" "maps: prodigy" 	                      "rcon changelevel de_prodigy"
+				"*" "maps: russka"       	                      "rcon changelevel de_russka"
+				"*" "maps: storm"      	                      "rcon changelevel de_storm"
+				"*" "maps: survivor"	                      "rcon changelevel de_survivor"
+				"*" "maps: torn"       	                      "rcon changelevel de_torn"
+			}
+			"*" "maps:"
+			{
+				"*" "maps: train"         	                      "rcon changelevel de_train"
+				"*" "maps: tuscan"    	                      "rcon changelevel de_tuscan"
+				"*" "maps: vegas"        	                      "rcon changelevel de_vegas"
+				"*" "maps: vertigo"     	                      "rcon changelevel de_vertigo"
+				"*" "maps: speedrun"	                      "rcon changelevel cs_speedrun"
+			}
+		} 
+		"*" "server: cvars"
+		{
+			"*" "cvars: startmoney"
+			{
+				"*" "startmoney: 800" 		"rcon mp_startmoney 800"
+				"*" "startmoney: 1000" 		"rcon mp_startmoney 1000"
+				"*" "startmoney: 5000" 		"rcon mp_startmoney 5000"
+				"*" "startmoney: 10000" 		"rcon mp_startmoney 10000"
+				"*" "startmoney: 16000"		"rcon mp_startmoney 16000"
+				"*" "startmoney: custom"		"messagemode rcon mp_startmoney"
+			}
+			"*" "cvars: roundtime"
+			{
+				"*" "roundtime: 1.45 min." 	             	"rcon mp_roundtime 1.75"
+				"*" "roundtime: 2.00 min." 		"rcon mp_roundtime 2"
+				"*" "roundtime: 4.00 min." 		"rcon mp_roundtime 4"
+				"*" "roundtime: 6.00 min." 		"rcon mp_roundtime 6"
+				"*" "roundtime: 8.00 min." 		"rcon mp_roundtime 8"
+				"*" "roundtime: custom"		"messagemode rcon mp_roundtime"
+			}
+			"*" "cvars: buytime"
+			{
+				"*" "buytime: 00 sec." 		"rcon mp_buytime 0"
+				"*" "buytime: 15 sec." 		"rcon mp_buytime 0.25"
+				"*" "buytime: 30 sec." 		"rcon mp_buytime 0.5"
+				"*" "buytime: 60 sec." 		"rcon mp_buytime 1"
+				"*" "buytime: 90 sec." 		"rcon mp_buytime 1.5"
+				"*" "buytime: custom"		"messagemode rcon mp_buytime"
+			}
+			"*" "cvars: freezetime"
+			{
+				"*" "freezetime: 00 sec." 		"rcon mp_freezetime 0"
+				"*" "freezetime: 04 sec." 		"rcon mp_freezetime 4"
+				"*" "freezetime: 06 sec." 		"rcon mp_freezetime 6"
+				"*" "freezetime: 10 sec." 		"rcon mp_freezetime 10"
+				"*" "freezetime: 15 sec." 		"rcon mp_freezetime 15"
+				"*" "freezetime: custom"		"messagemode rcon mp_freezetime"
+			}	
+			"*" "cvars: c4 timer"
+			{
+				"*" "c4 timer: 30 sec." 		"rcon mp_c4timer 30"
+				"*" "c4 timer: 35 sec." 		"rcon mp_c4timer 35"
+				"*" "c4 timer: 40 sec." 		"rcon mp_c4timer 40"
+				"*" "c4 timer: 45 sec." 		"rcon mp_c4timer 45"
+				"*" "c4 timer: 50 sec." 		"rcon mp_c4timer 50"
+				"*" "c4 timer: custom"		"messagemode rcon mp_c4timer"
+			}
+			"*" "cvars: map timelimit"
+			{
+				"*" "timelimit: 00 min"		"rcon mp_timelimit 0"
+				"*" "timelimit: 15 min"		"rcon mp_timelimit 15"
+				"*" "timelimit: 20 min"		"rcon mp_timelimit 20"
+				"*" "timelimit: 30 min"		"rcon mp_timelimit 30"
+				"*" "timelimit: 60 min"		"rcon mp_timelimit 60"
+				"*" "timelimit: custom"		"messagemode rcon mp_timelimit"
+			}
+			"*" "cvars: death camera"
+			{
+				"*" "camera: anyone"		"rcon mp_fadetoblack 0; rcon mp_forcecamera 0"
+				"*" "camera: team only"		"rcon mp_fadetoblack 0; rcon mp_forcecamera 2"
+				"*" "camera: first-person"		"rcon mp_fadetoblack 0; rcon mp_forcecamera 3"
+				"*" "camera: fade to black"		"rcon mp_fadetoblack 1"
+			}
+			"*" "cvars: footsteps"
+			{
+				"*" "footsteps: disable"		"rcon mp_footsteps 0"
+				"*" "footsteps: enable"		"rcon mp_footsteps 1"
+			}
+			"*" "cvars: friendly fire"
+			{
+				"*" "friendly fire: disable" 		"rcon mp_friendlyfire 0"
+				"*" "friendly fire: enable" 		"rcon mp_friendlyfire 1"
+			}
+			"*" "cvars: pause"
+			{
+				"*" "pause: disable" 		"rcon pausable 0"
+				"*" "pause: enable" 		"rcon pausable 1"
+			}
+		}
+		"*" "server: esl"
+		{
+			"*" "esl: 1on1 settings"
+			{
+				"*" "1on1 mr12" 			"exec BEAST-CONFIGS/server/rcon/esl/e1on1.cfg"
+				"*" "1on1 aim" 			"exec BEAST-CONFIGS/server/rcon/esl/e1on1aim.cfg"
+				"*" "1on1 eas" 			"exec BEAST-CONFIGS/server/rcon/esl/e1on1eas.cfg"
+				"*" "1on1 fml" 			"exec BEAST-CONFIGS/server/rcon/esl/e1on1fun.cfg"
+				"*" "1on1 quick"			"exec BEAST-CONFIGS/server/rcon/esl/e1on1quick.cfg"
+			}
+			"*" "esl: team settings"
+			{
+				"*" "2on2 mr12" 			"exec BEAST-CONFIGS/server/rcon/esl/e2on2.cfg"
+				"*" "2on2 eas" 			"exec BEAST-CONFIGS/server/rcon/esl/e2on2eas.cfg"
+				"*" "2on2 quick"			"exec BEAST-CONFIGS/server/rcon/esl/e2on2quick.cfg"
+				"*" "3on3" 			"exec BEAST-CONFIGS/server/rcon/esl/e3on3.cfg"
+				"*" "3on3 +fml"			"exec BEAST-CONFIGS/server/rcon/esl/efunmap.cfg"
+			}
+			"*" "esl: 5on5 settings"
+			{
+				"*" "5on5 mr12"			"exec BEAST-CONFIGSs/server/rcon/esl/e5on5mr.cfg"
+				"*" "5on5 eas"			"exec BEAST-CONFIGS/server/rcon/esl/e5on5eas.cfg"
+				"*" "5on5 atl"			"exec BEAST-CONFIGS/server/rcon/esl/e5on5atl.cfg"
+				"*" "5on5 co"			"exec BEAST-CONFIGS/server/rcon/esl/e5on5co.cfg"
+			}
+		}
+		"*" "server: settings"
+		{       
+			"*" "settings: 1on1" 			"exec BEAST-CONFIGS/server/rcon/match/1on1.cfg"
+			"*" "settings: 5on5" 			"exec BEAST-CONFIGS/server/rcon/match/5on5.cfg"
+			"*" "settings: overtime mr-3" 			"exec BEAST-CONFIGS/server/rcon/match/ot-mr3.cfg"
+			"*" "settings: overtime mr-5" 			"exec BEAST-CONFIGS/server/rcon/match/ot-mr5.cfg"
+			"*" "settings: training" 			"exec BEAST-CONFIGS/server/rcon/match/training.cfg"
+			"*" "settings: warmup" 			"exec BEAST-CONFIGS/server/rcon/match/warmup.cfg"
+			"*" "settings: live!" 				"exec BEAST-CONFIGS/server/rcon/match/start.cfg"
+		}
+		"*" "server: spectators" 
+		{       
+			"*" "spectators: disable" 			"rcon allow_spectators 0"
+			"*" "spectators: enable" 			"rcon allow_spectators 1"
+		} 
+		"*" "server: restart round" 
+		{       
+			"*" "restart round: 1 sec" 			"rcon sv_restartround 1"
+			"*" "restart round: 2 sec" 			"rcon sv_restartround 2"
+			"*" "restart round: 3 sec" 			"rcon sv_restartround 3"
+		}
+		"*" "server: passwords" 
+		{      
+			"*" "passwords: eas" 			"exec BEAST-CONFIGS/server/rcon/password/eas.cfg"
+			"*" "passwords: eps" 			"exec BEAST-CONFIGS/server/rcon/password/eps.cfg" 
+			"*" "passwords: esl" 			"exec BEAST-CONFIGS/server/rcon/password/esl.cfg"
+			"*" "passwords: fw" 			"exec BEAST-CONFIGS/server/rcon/password/fw.cfg"
+			"*" "passwords: pcw" 			"exec BEAST-CONFIGS/server/rcon/password/pcw.cfg"
+			"*" "passwords: custom" 			"exec BEAST-CONFIGS/server/rcon/password/custom.cfg"
+		}
+	}
+	"*" "server: local"
+	{
+		"*" "server: maps"
+		{  
+			"*" "maps:"
+			{
+				"*" "maps: airstrip"     	               "changelevel de_airstrip"
+				"*" "maps: aztec"       	               "changelevel de_aztec"
+				"*" "maps: cobble"      	               "changelevel de_cbble"
+				"*" "maps: chateau"	               "changelevel de_chateau"
+				"*" "maps: cpl fire"     	               "changelevel de_cpl_fire"
+				"*" "maps: cpl mill"     	               "changelevel de_cpl_mill"
+				"*" "maps: dust"       	               "changelevel de_dust"
+				"*" "maps: dust2"      	               "changelevel de_dust2"
+				"*" "maps: esl autumn"	               "changelevel de_esl_autumn"
+				"*" "maps: forge"       	               "changelevel de_forge"
+			}
+			"*" "maps:"
+			{
+				"*" "maps: inferno"       	               "changelevel de_inferno"
+				"*" "maps: lite"           	               "changelevel de_lite"
+				"*" "maps: mirage"     	               "changelevel de_mirage"
+				"*" "maps: nuke"       	               "changelevel de_nuke"
+				"*" "maps: piranesi" 	               "changelevel de_piranesi"
+				"*" "maps: prodigy" 	               "changelevel de_prodigy"
+				"*" "maps: russka"       	               "changelevel de_russka"
+				"*" "maps: storm"      	               "changelevel de_storm"
+				"*" "maps: survivor"	               "changelevel de_survivor"
+				"*" "maps: torn"       	               "changelevel de_torn"
+			}
+			"*" "maps:"
+			{
+				"*" "maps: train"                                     "changelevel de_train"
+				"*" "maps: tuscan"    	               "changelevel de_tuscan"
+				"*" "maps: vegas"        	               "changelevel de_vegas"
+				"*" "maps: vertigo"     	               "changelevel de_vertigo"
+				"*" "maps: speedrun"	               "changelevel cs_speedrun"
+			}	
+		} 
+		"*" "server: cvars"
+		{
+			"*" "cvars: startmoney"
+			{
+				"*" "startmoney: 800" 		"mp_startmoney 800"
+				"*" "startmoney: 1000" 		"mp_startmoney 1000"
+				"*" "startmoney: 5000" 		"mp_startmoney 5000"
+				"*" "startmoney: 10000" 		"mp_startmoney 10000"
+				"*" "startmoney: 16000"		"mp_startmoney 16000"
+				"*" "startmoney: custom"		"messagemode mp_startmoney"
+			}
+			"*" "cvars: roundtime"
+			{
+				"*" "roundtime: 1.45 min." 	             	"mp_roundtime 1.75"
+				"*" "roundtime: 2.00 min." 		"mp_roundtime 2"
+				"*" "roundtime: 4.00 min." 		"mp_roundtime 4"
+				"*" "roundtime: 6.00 min." 		"mp_roundtime 6"
+				"*" "roundtime: 8.00 min." 		"mp_roundtime 8"
+				"*" "roundtime: custom"		"messagemode mp_roundtime"
+			}
+			"*" "cvars: buytime"
+			{
+				"*" "buytime: 00 sec." 		"mp_buytime 0"
+				"*" "buytime: 15 sec." 		"mp_buytime 0.25"
+				"*" "buytime: 30 sec." 		"mp_buytime 0.5"
+				"*" "buytime: 60 sec." 		"mp_buytime 1"
+				"*" "buytime: 90 sec." 		"mp_buytime 1.5"
+				"*" "buytime: custom"		"messagemode mp_buytime"
+			}
+			"*" "cvars: freezetime"
+			{
+				"*" "freezetime: 00 sec." 		"mp_freezetime 0"
+				"*" "freezetime: 04 sec." 		"mp_freezetime 4"
+				"*" "freezetime: 06 sec." 		"mp_freezetime 6"
+				"*" "freezetime: 10 sec." 		"mp_freezetime 10"
+				"*" "freezetime: 15 sec." 		"mp_freezetime 15"
+				"*" "freezetime: custom"		"messagemode mp_freezetime"
+			}	
+			"*" "cvars: c4 timer"
+			{
+				"*" "c4 timer: 30 sec." 		"mp_c4timer 30"
+				"*" "c4 timer: 35 sec." 		"mp_c4timer 35"
+				"*" "c4 timer: 40 sec." 		"mp_c4timer 40"
+				"*" "c4 timer: 45 sec." 		"mp_c4timer 45"
+				"*" "c4 timer: 50 sec." 		"mp_c4timer 50"
+				"*" "c4 timer: custom"		"messagemode mp_c4timer"
+			}
+			"*" "cvars: map timelimit"
+			{
+				"*" "timelimit: 00 min"		"mp_timelimit 0"
+				"*" "timelimit: 15 min"		"mp_timelimit 15"
+				"*" "timelimit: 20 min"		"mp_timelimit 20"
+				"*" "timelimit: 30 min"		"mp_timelimit 30"
+				"*" "timelimit: 60 min"		"mp_timelimit 60"
+				"*" "timelimit: custom"		"messagemode mp_timelimit"
+			}
+			"*" "cvars: death camera"
+			{
+				"*" "camera: anyone"		"mp_fadetoblack 0;mp_forcecamera 0"
+				"*" "camera: team only"		"mp_fadetoblack 0;mp_forcecamera 2"
+				"*" "camera: first-person"		"mp_fadetoblack 0;mp_forcecamera 3"
+				"*" "camera: fade to black"		"mp_fadetoblack 1"
+			}
+			"*" "cvars: footsteps"
+			{
+				"*" "footsteps: disable"		"mp_footsteps 0"
+				"*" "footsteps: enable"		"mp_footsteps 1"
+			}
+			"*" "cvars: friendly fire"
+			{
+				"*" "friendly fire: disable" 		"mp_friendlyfire 0"
+				"*" "friendly fire: enable" 		"mp_friendlyfire 1"
+			}
+			"*" "cvars: pause"
+			{
+				"*" "pause: disable" 		"pausable 0"
+				"*" "pause: enable" 		"pausable 1"
+			}
+		}
+		"*" "server: settings"
+		{       
+			"*" "settings: 5on5" 			"exec BEAST-CONFIGS/server/local/5on5.cfg"
+			"*" "settings: training" 			"exec BEAST-CONFIGS/server/local/training.cfg"
+			"*" "settings: warmup" 			"exec BEAST-CONFIGS/server/local/warmup.cfg"
+			"*" "settings: live!" 				"exec BEAST-CONFIGS/server/local/start.cfg"
+		}
+		"*" "server: restart round" 
+		{       
+			"*" "restart round: 1 sec" 			"sv_restartround 1"
+			"*" "restart round: 2 sec" 			"sv_restartround 2"
+			"*" "restart round: 3 sec" 			"sv_restartround 3"
+		}
+		"*" "server: passwords" 
+		{      
+			"*" "passwords: cpl" 			"echo password: cpl;	sv_password cpl"
+			"*" "passwords: eps" 			"echo password: eps;	sv_password eps" 
+			"*" "passwords: esl" 			"echo password: esl;	sv_password esl"
+			"*" "passwords: pcw" 			"echo password: pcw;	sv_password pcw"
+			"*" "passwords: hltv" 			"echo password: hltv;	sv_password hltv"
+		}
+		"*" "server: password" 				"messagemode sv_password"
+		"*" "server: spectators" 
+		{       
+			"*" "spectators: disable" 			"allow_spectators 0"
+			"*" "spectators: enable" 			"allow_spectators 1"
+		} 
+		"*" "server: hostname" 				"messagemode hostname"
+	}
+}
+"*" "Media"
+{       
+	"*" "media: demos"
+                                            {
+	                            MAP de_aztec				"*" "demos: record" 
+				{
+				TEAM1 "*" "de aztec tr"		"stop; record demos/aztec-tr;say_team demo: aztec tr pov demo - recording."
+				TEAM2 "*" "de aztec ct"		"stop; record demos/aztec-ct;say_team demo: aztec ct pov demo - recording."
+				}
+	                            MAP de_cbble				"*" "demos: record" 
+				{
+				TEAM1 "*" "de cbble tr"		"stop; record demos/cbble-tr; say_team demo: cbble tr pov demo - recording."
+				TEAM2 "*" "de cbble ct"		"stop; record demos/cbble-ct; say_team demo: cbble ct pov demo - recording."
+				}
+	                            MAP de_dust2				"*" "demos: record" 
+				{
+				TEAM1 "*" "de dust2 tr"		"stop; record demos/dust2-tr;say_team demo: dust2 tr pov demo - recording."
+				TEAM2 "*" "de dust2 ct"		"stop; record demos/dust2-ct;say_team demo: dust2 ct pov demo - recording."
+				}
+	                            MAP de_esl_autumn				"*" "demos: record" 
+				{
+				TEAM1 "*" "de esl autumn tr"		"stop; record demos/esl_autumn-tr;say_team demo: esl_autumn tr pov demo - recording."
+				TEAM2 "*" "de esl autumn ct"		"stop; record demos/esl_autumn-ct;say_team demo: esl_autumn ct pov demo - recording."
+				}
+	                            MAP de_forge				"*" "demos: record" 
+				{
+				TEAM1 "*" "de forge tr"		"stop; record demos/forge-tr;say_team demo: forge tr pov demo - recording."
+				TEAM2 "*" "de forge ct"		"stop; record demos/forge-ct;say_team demo: forge ct pov demo - recording."
+				}
+	                            MAP de_inferno				"*" "demos: record" 
+				{
+				TEAM1 "*" "de inferno tr"		"stop; record demos/inferno-tr;say_team demo: inferno tr pov demo - recording."
+				TEAM2 "*" "de inferno ct"		"stop; record demos/inferno-ct;say_team demo: inferno ct pov demo - recording."
+				}
+	                            MAP de_mirage				"*" "demos: record" 
+				{
+				TEAM1 "*" "de mirage tr"		"stop; record demos/mirage-tr;say_team demo: mirage tr pov demo - recording."
+				TEAM2 "*" "de mirage ct"		"stop; record demos/mirage-ct;say_team demo: mirage ct pov demo - recording."
+				}
+	                            MAP de_nuke				"*" "demos: record" 
+				{
+				TEAM1 "*" "de nuke tr"		"stop; record demos/nuke-tr; say_team demo: nuke tr pov demo - recording."
+				TEAM2 "*" "de nuke ct"		"stop; record demos/nuke-ct; say_team demo: nuke ct pov demo - recording."
+				}
+	                            MAP de_train				"*" "demos: record" 
+				{
+				TEAM1 "*" "de train tr"		"stop; record demos/train-tr;say_team demo: train tr pov demo - recording."
+				TEAM2 "*" "de train ct"		"stop; record demos/train-ct;say_team demo: train ct pov demo - recording."
+				}
+	                            MAP de_tuscan				"*" "demos: record" 
+				{
+				TEAM1 "*" "de tuscan tr"		"stop; record demos/tuscan-tr;say_team demo: tuscan tr pov demo - recording."
+				TEAM2 "*" "de tuscan ct"		"stop; record demos/tuscan-ct;say_team demo: tuscan ct pov demo - recording."
+				}
+				"*" "demos: record manually"  	"messagemode record"
+				"*" "demos: playdemo" 		"messagemode playdemo"
+				"*" "demos: viewdemo" 		"messagemode viewdemo"
+				"*" "demos: stop" 			"stop"
+                                            }
+	"*" "media: screenshots"                                                                 
+                                            {
+	                                                       "*" "screenshots: normal"                "scrsnapshot"
+		                                       "*" "screenshots: score"                  "scrscoreboard"
+		                                       "*" "screenshots: graphscore"         "scrgraphscore"
+		                                       "*" "screenshots: console"               "scrconsole"
+		                                       "*" "screenshots: status"                 "scrstatus"
+		                                       "*" "screenshots: rcon status"         "scrrconstatus"
+                                            }
+	"*" "media: statistic"                                                                 
+                                            {
+	                                                       "*" "statistic: players"                      "toggleconsole;listplayers"
+	                                                       "*" "statistic: stats"                          "toggleconsole;stats"
+		                                       "*" "statistic: status"                        "toggleconsole;status"
+                                            }
+	"*" "media: condump"					"condump"
+}
+"*" "Misc"                                                                 
+{
+            	 "*" "misc: show scores"                                                          	"+showscores"
+            	 "*" "misc: all information"                                                      		"infos"
+            	 "*" "misc: map description" 		                               		"showbriefing"
+            	 "*" "misc: time left" 		                                	"timeleft"
+            	 "*" "misc: drop weapon"                                                         	"drop"
+            	 "*" "misc: clean console"                                                         	"clear"
+}
+"*" "Game" 
+{
+	"*" "game: graphic"
+		{
+			"*" "graphic: minmodels"
+				{
+				"*" "minmodels: disable" 		"cl_minmodels 0"
+				"*" "minmodels: enable" 		"cl_minmodels 1"
+				}
+			"*" "graphic: shadows"
+				{
+				"*" "shadows: disable"		"cl_shadows 0"
+				"*" "shadows: enable"		"cl_shadows 1"
+				}
+			"*" "graphic: weather effects"
+				{
+				"*" "weather effects: disable"		"cl_weather 0"
+				"*" "weather effects: enable" 	"cl_weather 1"
+				}
+			"*" "graphic: detail textures"
+				{
+				"*" "detail textures: disable" 		"r_detailtextures 0"
+				"*" "detail textures: enable" 		"r_detailtextures 1"
+				}
+			"*" "graphic: polygon offset"
+				{
+				"*" "polygon offset: ati" 		"gl_polyoffset 0.1"
+				"*" "polygon offset: nvidia" 		"gl_polyoffset 4"
+				}
+		}
+	"*" "game: hud"
+		{	
+			"*" "hud: fastswitch"
+				{
+				"*" "fastswitch: disable"		"hud_fastswitch 0"
+				"*" "fastswitch: enable"		"hud_fastswitch 1"
+				}
+			"*" "hud: draw"
+				{
+				"*" "draw: disable" 			"hud_draw 0"
+				"*" "draw: enable" 			"hud_draw 1"
+				}
+			"*" "hud: radar"
+				{
+				"*" "radar: disable" 			"hideradar"
+				"*" "radar: enable" 			"drawradar"
+				}
+			"*" "hud: saytext"
+				{
+				"*" "saytext: disable" 		"hud_saytext 0"
+				"*" "saytext: enable" 		"hud_saytext 1"
+				}
+			"*" "hud: time saytext" 			"messagemode hud_saytext_time"
+			"*" "hud: time history" 			"messagemode hud_drawhistory_time"
+			"*" "hud: time deathnotice" 			"messagemode hud_deathnotice_time"
+		}
+	"*" "game: resolution"
+		{
+		"*" "resolution: 640 x 480" 				"_setvideomode 640 x 480;_restart"
+		"*" "resolution: 800 x 600" 				"_setvideomode 800 x 600;_restart"
+		"*" "resolution: 1024 x 768" 				"_setvideomode 1024 x 768;_restart"
+                                "*" "resolution: 1280 x 1024" 				"_setvideomode 1280 x 1024;_restart"
+		}
+	"*" "game: connect"					"messagemode connect"
+	"*" "game: disconnect"		 			"roundend"
+	"*" "game: quit" 						"quit"
+}
+"*" "FPS Booster" 		                                                                        "exec BEAST-CONFIGS/booster/fpsboost.cfg;waits;say FPS Booster Loaded By: CS-BEAST MODE"
+"*" "Ping Booster"		                                                                                "exec BEAST-CONFIGS/booster/pingboost.cfg;waits;say Ping Booster Loaded By: CS-BEAST MODE"
+"*" ".:: Close ::."		                                                                                "-commandmenu"
+
+
+// Counter-Strike 1.6 BEAST MODE 2018 CommandMenu
+// =================================================================================================
+// © 2018 By: babii
+// =================================================================================================

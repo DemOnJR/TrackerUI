@@ -1,0 +1,59 @@
+"filters"
+{
+	"favorites"
+	{
+		"0"
+		{
+			"name"		"CSME.GA [PUBLIC]"
+			"address"	"192.168.1.1:27015"
+			"lastplayed"	"1533722113"
+			"appID"		"10"
+		}
+		
+		"1"
+		{
+			"name"		"CSME.GA [AUTO-MIX]"
+			"address"	"192.168.1.1:27016"
+			"lastplayed"	"1533722113"
+			"appID"		"10"
+		}
+		
+		"2"
+		{
+			"name"		"CSME.GA [ZOMBIE PLAGUE]"
+			"address"	"192.168.1.1:27020"
+			"lastplayed"	"1533722113"
+			"appID"		"10"
+		}
+
+	}
+
+	"history"
+	{
+		"0"
+		{
+			"name"		"CSME.GA [PUBLIC]"
+			"address"	"192.168.1.1:27015"
+			"lastplayed"	"1533722113"
+			"appID"		"10"
+		}
+		
+		"1"
+		{
+			"name"		"CSME.GA [AUTO-MIX]"
+			"address"	"192.168.1.1:27016"
+			"lastplayed"	"1533722113"
+			"appID"		"10"
+		}
+		
+		"2"
+		{
+			"name"		"CSME.GA [ZOMBIE PLAGUE]"
+			"address"	"192.168.1.1:27020"
+			"lastplayed"	"1533722113"
+			"appID"		"10"
+		}
+
+	}
+
+}

@@ -1,0 +1,22 @@
+<html>
+<center>
+<head>
+<style>@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500'); body {background-color:#121212;margin:10px 25px 0;font-family:'Work Sans',sans-serif} h1 {color: #fff}
+h1 {font-size:14px} .server-name, .country-name{color:#f00;text-decoration:underline} p {color:#009fff} p span {color:#09ff00} .player-info {color: #ff0090} .author-name {color:#ffab00;font-weight:bold;text-decoration:underline} hr {background:#fc0000;border:none;height:3px;border-radius:10px} a {color:#0f0;text-decoration:none;border-bottom:2px solid #2c9e2c;padding-bottom:3px}
+</style>
+</head>
+<title>CSMEGA | Motd</title>
+<body>
+<h1>You're Now Part Of <span style="color:#f00;">CSMEGA</span> Community <span>.</h1>
+<hr />
+<p>Counter-Strike 1.6 Server DNS: <span>S.CSME.GA:27015</span></p>
+<p>Team Speak 3 Server DNS: <span>TS3.CSME.GA</span></p>
+<hr />
+<p>Website Link: <a href="http://csme.ga">CSME.GA</a></p>
+<p>Facebook Link: <a href="https://www.facebook.com/CSMEGA">Best Game Hosting</a></p>
+<p>Donate Us: <a href="https://www.paypal.me/BestGameHosting">Via PayPal</a></p>
+<hr />
+<p><strong>All rights reserved</strong></p>
+</body>
+</center>
+</html>
